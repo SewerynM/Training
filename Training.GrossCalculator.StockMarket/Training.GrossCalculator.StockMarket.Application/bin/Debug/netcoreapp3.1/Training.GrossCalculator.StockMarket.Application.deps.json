@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Training.GrossCalculator.StockMarket.Application/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "3.1.19"
+        },
+        "runtime": {
+          "Training.GrossCalculator.StockMarket.Application.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.1.19": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.19"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "3.1.19.0",
+            "fileVersion": "3.100.1921.41702"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.19": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.1.19.0",
+            "fileVersion": "3.100.1921.41702"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Training.GrossCalculator.StockMarket.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection/3.1.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cdBicT5kRGBVWilW0QUFYmeqYNgBP3NHwrnsuJj0QqivA74OHcUiS18EFLMRmqwZ746mbnptfSZ4Lh997KsUew==",
+      "path": "microsoft.extensions.dependencyinjection/3.1.19",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.1.19.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tiaohUQoNWfUQBWAW4wg9yRYAYcxq0IERI6bR8DojusFIVybdzOJ1bJXLghfO17cGx05SdiUnUk8h0SiQn0hBw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.19",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.19.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YOfM4/CMKlprW49BK44stPW1/FKWFOvbtMb0j9sh0tzA4Lnw4kbQzueVrChAL3c5zl3z43FgpZTyk5vIxy46aA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Training\\Training.GrossCalculator.StockMarket\\Training.GrossCalculator.StockMarket.Application\\Training.GrossCalculator.StockMarket.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4746\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.19\\microsoft.extensions.dependencyinjection.3.1.19.nupkg.sha512",
+    "C:\\Users\\4746\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.19\\microsoft.extensions.dependencyinjection.abstractions.3.1.19.nupkg.sha512"
+  ],
+  "logs": []
+}

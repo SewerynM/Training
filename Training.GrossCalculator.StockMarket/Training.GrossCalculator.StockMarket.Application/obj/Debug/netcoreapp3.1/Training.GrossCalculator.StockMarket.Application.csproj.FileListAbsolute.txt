@@ -1,0 +1,9 @@
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\bin\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.deps.json
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\bin\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.dll
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\bin\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.pdb
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.AssemblyInfoInputs.cache
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.AssemblyInfo.cs
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.csproj.CoreCompileInputs.cache
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.dll
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.pdb
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.csproj.AssemblyReference.cache
