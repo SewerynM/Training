@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E8357D97-1B63-4307-BA54-00F9F8A49471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.GrossCalculator.StockMarket.Functions", "Training.GrossCalculator.StockMarket.Functions\Training.GrossCalculator.StockMarket.Functions.csproj", "{BAFB5EF9-F3D6-4BA2-A03F-3E8D423267C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.GrossCalculator.StockMarket.Functions", "Training.GrossCalculator.StockMarket.Functions\Training.GrossCalculator.StockMarket.Functions.csproj", "{BAFB5EF9-F3D6-4BA2-A03F-3E8D423267C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.GrossCalculator.StockMarket.Application", "Training.GrossCalculator.StockMarket.Application\Training.GrossCalculator.StockMarket.Application.csproj", "{4040390E-091B-4E9B-B956-23B57A621FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.GrossCalculator.StockMarket.Application", "Training.GrossCalculator.StockMarket.Application\Training.GrossCalculator.StockMarket.Application.csproj", "{4040390E-091B-4E9B-B956-23B57A621FE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,6 +9,11 @@ namespace Training.GrossCalculator.StockMarket.Application.Extensions
     {
         public static void AddApplication(this IServiceCollection services)
         {
+            
+        }
+
+        public static void AddCosmosRepositories(IServiceCollection services, dynamic secrets)
+        {
 
         }
     }
