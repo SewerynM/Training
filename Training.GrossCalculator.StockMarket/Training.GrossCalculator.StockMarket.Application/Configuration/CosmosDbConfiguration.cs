@@ -9,6 +9,5 @@ namespace Training.GrossCalculator.StockMarket.Application.Configuration
         public string DatabaseName { get; set; }
 
         public string ContainerName { get; set; }
-
     }
 }

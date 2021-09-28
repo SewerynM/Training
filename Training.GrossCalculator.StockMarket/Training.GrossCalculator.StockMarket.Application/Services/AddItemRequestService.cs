@@ -21,10 +21,10 @@ namespace Training.GrossCalculator.StockMarket.Application
         public async Task<AddItemResponse> ExecuteAsync(AddItemRequest request)
         {
             _request = request;
-            /*foreach (Item item in _request.Items)*/
-            for(var i = 0; i < request.Items.Length; i++)
+            foreach (Item item in _request.Items)
             {
-                await _itemsCosmosDbConnector.AddItemsToContainerAsync(new CosmosItem(request.Items[i]));
+
+                await _itemsCosmosDbConnector.AddItemsToContainerAsync(new CosmosItem(item));
             }
             return await Task.FromResult(new AddItemResponse());
         }
