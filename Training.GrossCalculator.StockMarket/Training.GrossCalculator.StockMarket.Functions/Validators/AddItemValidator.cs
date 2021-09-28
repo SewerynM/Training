@@ -7,6 +7,10 @@ namespace Training.GrossCalculator.StockMarket.Functions.Validators
 {
     public class AddItemValidator : AbstractValidator<AddItem>
     {
+        /*public AddItemValidator()
+        {
+            RuleFor(@event ).Custom(ValidateClientId)
+        }*/
 
         private static void ValidateClientId(string clientId, ValidationContext<AddItem> context)
         {

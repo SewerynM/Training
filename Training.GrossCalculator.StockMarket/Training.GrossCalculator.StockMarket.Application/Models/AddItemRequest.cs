@@ -2,8 +2,6 @@
 {
     public class AddItemRequest
     {
-        public string ClientId { get; set; }
-
         public Item[] Items { get; set; }
     }
 }

@@ -7,3 +7,5 @@ C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculat
 C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.dll
 C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.pdb
 C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\obj\Debug\netcoreapp3.1\Training.GrossCalculator.StockMarket.Application.csproj.AssemblyReference.cache
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Projects\Training\Training.GrossCalculator.StockMarket\Training.GrossCalculator.StockMarket.Application\bin\Debug\netcoreapp3.1\Cosmos.CRTCompat.dll

@@ -9,27 +9,34 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Training.GrossCalculator.StockMarket.Functions.Functions;
+using Training.GrossCalculator.StockMarket.Application;
+using Training.GrossCalculator.StockMarket.Application.Models;
+
 
 namespace Training.GrossCalculator.StockMarket.Functions
 {
-    public class AddItem : IAddItem
+    public class AddItem
     {
         private readonly IValidator<AddItem> _validator;
+        private readonly IExecutable<AddItemRequest, AddItemResponse> _executable;
 
-        public AddItem(IValidator<AddItem> validator)
+        public AddItem(IValidator<AddItem> validator, IExecutable<AddItemRequest, AddItemResponse> executable)
         {
-            this._validator = validator;
+            _validator = validator;
+            _executable = executable;
         }
 
         [FunctionName(nameof(AddItem))]
-        public static async Task<IActionResult> Run(
+        public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous,  "post", Route = "v1/items")] HttpRequest req,
             ILogger log)
         {
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            
-            return new OkObjectResult(data[0].items[2].name);
+            var data = JsonConvert.DeserializeObject<AddItemRequest>(requestBody);
+            var response = await _executable.ExecuteAsync(data);
+
+
+            return new OkObjectResult(response);
         }
     }
 }
