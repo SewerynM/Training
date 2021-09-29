@@ -5,9 +5,9 @@ using Training.GrossCalculator.StockMarket.Functions.Functions;
 
 namespace Training.GrossCalculator.StockMarket.Functions.Validators
 {
-    public class CalculateKainosStockEqualToTotalValidator : AbstractValidator<CalculateKainosStockEqualToTotal>
+    public class CalculateKainosStockEqualToTotalValidator : AbstractValidator<ConvertTotalToKainosStockFunction>
     {
-        private static void ValidateTotal(float total, ValidationContext<CalculateKainosStockEqualToTotal> context)
+        private static void ValidateTotal(float total, ValidationContext<ConvertTotalToKainosStockFunction> context)
         {
             if (total < 0)
             {

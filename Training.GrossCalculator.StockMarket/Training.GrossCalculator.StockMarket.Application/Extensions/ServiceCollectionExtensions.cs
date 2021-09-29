@@ -22,6 +22,7 @@ namespace Training.GrossCalculator.StockMarket.Application.Extensions
             });
             services.AddTransient<IExecutable<AddItemRequest, AddItemResponse>, AddItemRequestService>();
             services.AddTransient<IExecutable<CosmosItem, UpdatePriceGrossResponse>, UpdateItemPriceGrossService>();
+            services.AddTransient<IExecutable<GetInvoiceRequest, GetInvoiceResponse>, GetInvoicePerClientIdService>();
         }
     }
 }

@@ -7,5 +7,7 @@ namespace Training.GrossCalculator.StockMarket.Application.Connectors
     {
         Task AddItemsToContainerAsync(CosmosItem item);
 
+        Task<GetInvoiceResponse> GetItemsPerClientId(string ClientId);
+
     }
 }

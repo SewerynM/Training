@@ -16,20 +16,20 @@ using Training.GrossCalculator.StockMarket.Application.Models;
 
 namespace Training.GrossCalculator.StockMarket.Functions
 {
-    public class AddItem
+    public class AddItemFunction
     {
         private readonly IValidator<AddItemRequest> _validatorItem;
         private readonly IValidator<AddItemRequest> _validatorRequest;
         private readonly IExecutable<AddItemRequest, AddItemResponse> _executable;
 
-        public AddItem(IValidator<AddItemRequest> validatorItem, IValidator<AddItemRequest> validatorRequest, IExecutable<AddItemRequest, AddItemResponse> executable)
+        public AddItemFunction(IValidator<AddItemRequest> validatorItem, IValidator<AddItemRequest> validatorRequest, IExecutable<AddItemRequest, AddItemResponse> executable)
         {
             _validatorItem = validatorItem;
             _validatorRequest = validatorRequest;
             _executable = executable;
         }
 
-        [FunctionName(nameof(AddItem))]
+        [FunctionName(nameof(AddItemFunction))]
         public async Task<IActionResult> Run( 
             [HttpTrigger(AuthorizationLevel.Anonymous,  "post", Route = "v1/items")] HttpRequest req,
             ILogger log)

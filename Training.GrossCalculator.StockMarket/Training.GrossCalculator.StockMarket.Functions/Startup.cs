@@ -40,8 +40,8 @@ namespace Training.GrossCalculator.StockMarket.Functions
         {
             serviceCollection.AddTransient<IValidator<AddItemRequest>, AddItemValidator>();
             serviceCollection.AddTransient<IValidator<AddItemRequest>, RequestValidator>();
-            serviceCollection.AddTransient<IValidator<CalculateKainosStockEqualToTotal>, CalculateKainosStockEqualToTotalValidator>();
-            serviceCollection.AddTransient<IValidator<GetInvoicePerClientId>, GetInvoicePerClientIdValidator>();
+            serviceCollection.AddTransient<IValidator<ConvertTotalToKainosStockFunction>, CalculateKainosStockEqualToTotalValidator>();
+            serviceCollection.AddTransient<IValidator<GetInvoicePerClientIdFunction>, GetInvoicePerClientIdValidator>();
             serviceCollection.AddTransient<QueueClient>(provider =>
             {
                 QueueClient queueClient = new QueueClient(Environment.GetEnvironmentVariable("AzureWebJobsStorage"),

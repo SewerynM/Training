@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace Training.GrossCalculator.StockMarket.Functions.Functions
 {
-    public class CalculateKainosStockEqualToTotal
+    public class ConvertTotalToKainosStockFunction
     {
-        [FunctionName(nameof(CalculateKainosStockEqualToTotal))]
+        [FunctionName(nameof(ConvertTotalToKainosStockFunction))]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
             ILogger log)

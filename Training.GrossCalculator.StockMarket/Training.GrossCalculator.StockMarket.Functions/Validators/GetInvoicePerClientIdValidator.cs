@@ -5,9 +5,9 @@ using Training.GrossCalculator.StockMarket.Functions.Functions;
 
 namespace Training.GrossCalculator.StockMarket.Functions.Validators
 {
-    public class GetInvoicePerClientIdValidator : AbstractValidator<GetInvoicePerClientId>
+    public class GetInvoicePerClientIdValidator : AbstractValidator<GetInvoicePerClientIdFunction>
     {
-        private static void ValidateClientId(string clientId, ValidationContext<GetInvoicePerClientId> context)
+        private static void ValidateClientId(string clientId, ValidationContext<GetInvoicePerClientIdFunction> context)
         {
             if (clientId.Length != 8)
             {
