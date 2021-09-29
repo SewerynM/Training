@@ -2,7 +2,7 @@
 {
     public class Item
     {
-        public Item(string clientId, string name, string category, float priceNet)
+        public Item(string clientId, string name, string category, decimal priceNet)
         {
             this.ClientId = clientId;
             this.Name = name;
@@ -16,7 +16,7 @@
 
         public string Category { get; set; }
 
-        public float PriceNet { get; set; }
+        public decimal PriceNet { get; set; }
 
         public string GuId { set; get; }
     }

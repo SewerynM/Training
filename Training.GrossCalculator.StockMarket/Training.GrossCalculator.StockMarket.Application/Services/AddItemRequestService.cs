@@ -23,8 +23,15 @@ namespace Training.GrossCalculator.StockMarket.Application
             _request = request;
             foreach (Item item in _request.Items)
             {
+                await _itemsCosmosDbConnector.AddItemsToContainerAsync(new CosmosItem
+                {
+                    Category = item.Category,
+                    ClientId = item.ClientId,
+                    Id = Guid.NewGuid().ToString(),
+                    Name = item.Name,
+                    PriceNet = item.PriceNet
 
-                await _itemsCosmosDbConnector.AddItemsToContainerAsync(new CosmosItem(item));
+                });
             }
             return await Task.FromResult(new AddItemResponse());
         }

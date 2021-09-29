@@ -1,4 +1,5 @@
 ﻿using System;
+using Azure.Storage.Queues;
 using FluentValidation;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.WebJobs;
@@ -12,6 +13,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
 using Training.GrossCalculator.StockMarket.Application.Configuration;
+using Training.GrossCalculator.StockMarket.Application.Models;
 using Training.GrossCalculator.StockMarket.Functions.Functions;
 using Training.GrossCalculator.StockMarket.Functions.Validators;
 
@@ -36,9 +38,20 @@ namespace Training.GrossCalculator.StockMarket.Functions
         
         private static void AddServices(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IValidator<AddItem>, AddItemValidator>();
+            serviceCollection.AddTransient<IValidator<AddItemRequest>, AddItemValidator>();
+            serviceCollection.AddTransient<IValidator<AddItemRequest>, RequestValidator>();
             serviceCollection.AddTransient<IValidator<CalculateKainosStockEqualToTotal>, CalculateKainosStockEqualToTotalValidator>();
             serviceCollection.AddTransient<IValidator<GetInvoicePerClientId>, GetInvoicePerClientIdValidator>();
+            serviceCollection.AddTransient<QueueClient>(provider =>
+            {
+                QueueClient queueClient = new QueueClient(Environment.GetEnvironmentVariable("AzureWebJobsStorage"),
+                    Environment.GetEnvironmentVariable("QueueName"),
+                    new QueueClientOptions()
+                    {
+                        MessageEncoding = QueueMessageEncoding.Base64
+                    });
+                return queueClient;
+            });
         }
 
         private static CosmosDbConfiguration getCosmosDbConfiguration()

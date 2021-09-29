@@ -21,6 +21,7 @@ namespace Training.GrossCalculator.StockMarket.Application.Extensions
                 return cosmosClient.GetContainer(cosmosDbConfiguration.DatabaseName, cosmosDbConfiguration.ContainerName);
             });
             services.AddTransient<IExecutable<AddItemRequest, AddItemResponse>, AddItemRequestService>();
+            services.AddTransient<IExecutable<CosmosItem, UpdatePriceGrossResponse>, UpdateItemPriceGrossService>();
         }
     }
 }
